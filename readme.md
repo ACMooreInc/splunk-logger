@@ -31,7 +31,7 @@ logEvent(Config, EventObject, callback);
 ### source:
 The source the event is being logged from 
 ### eventMsg:
-String description of what trigger the event being logged
+String description of what triggered the event being logged
 ### eventSev:
 Severity level of the event being logged
 ### errMsg:
