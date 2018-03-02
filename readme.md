@@ -4,11 +4,9 @@
 ## To Use:
 ```
 require('splunk-logger');
-```
 
-## Call Log Event
-```
-logEvent(Config, EventObject, callback); 
+splunkLogger.init(config);
+splunkLogger.log(eventObject);
 ```
 
 ## Config Object Syntax

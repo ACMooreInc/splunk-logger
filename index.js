@@ -1,9 +1,14 @@
 var path = require('path'),
-    request = require('request');
+    request = require('request'),
+    config;
 
-exports.logEvent = logEvent;
+exports.init = function (cfg) {
+    config = cfg;
+}
 
-function logEvent(config, eventObj, cbMain) {
+exports.log = logEvent;
+
+function logEvent(eventObj, cbMain) {
     var event = {
         "source": eventObj.source,
         "event": {
