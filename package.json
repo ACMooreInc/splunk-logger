@@ -1,13 +1,20 @@
 {
-  "name": "splunk-logger",
+  "name": "@ac-moore-inc/splunk-logger",
   "version": "1.0.0",
-  "description": "",
+  "description": "An easy to use splunk logging utility.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ACMooreInc/splunk-logger"
+  },
+  "author": "A.C. Moore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ACMooreInc/splunk-logger/issues"
+  },
   "dependencies": {
     "request": "^2.83.0"
   }

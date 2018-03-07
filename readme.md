@@ -1,12 +1,15 @@
 # Splunk Logger
 
+An easy to use splunk logging utility.
+
+Created and maintained by the A.C. Moore software engineering team.  
 
 ## To Use:
 ```
 require('splunk-logger');
 
 splunkLogger.init(config);
-splunkLogger.log(eventObject);
+splunkLogger.log(eventObject, callback);
 ```
 
 ## Config Object Syntax
