@@ -6,7 +6,7 @@ Created and maintained by the A.C. Moore software engineering team.
 
 ## To Use:
 ```
-require('splunk-logger');
+var splunkLogger = require('@ac-moore-inc/splunk-logger');
 
 splunkLogger.init(config);
 splunkLogger.log(eventObject, callback);
