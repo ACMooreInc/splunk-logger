@@ -17,6 +17,11 @@ function logEvent(eventObj, cbMain) {
             "stack-trace": eventObj.errMsg
         }
     };
+    if (!config.splunkUrl || !config.splunkToken) {
+        event['logError'] = 'Splunk has not been configured, unable to log'
+        console.error(event);
+        return cbMain(null);
+    }    
     event = JSON.stringify(event);
     request({
         url: config.splunkUrl,
