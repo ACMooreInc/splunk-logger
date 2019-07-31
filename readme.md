@@ -26,7 +26,8 @@ splunkLogger.log(eventObject, callback);
   source: string,
   eventMsg: string,
   eventSev: string,
-  errMsg: string
+  errMsg: string,
+  eventData: string
 }
 ```
 ### source:
@@ -37,3 +38,5 @@ String description of what triggered the event being logged
 Severity level of the event being logged
 ### errMsg:
 Any error message associated with the event being logged
+### eventData:
+A JSON object containing additional information about the event being logged
