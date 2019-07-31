@@ -16,6 +16,7 @@ function logEvent(eventObj, cbMain) {
             "severity": eventObj.eventSev,
             "stack-trace": eventObj.errMsg
         }
+        if (eventObj.eventData) event["event"]["event-data"] = eventObj.eventData;
     };
     if (!config.splunkUrl || !config.splunkToken) {
         event['logError'] = 'Splunk has not been configured, unable to log'
